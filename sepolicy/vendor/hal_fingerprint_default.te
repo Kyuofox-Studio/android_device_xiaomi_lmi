@@ -27,3 +27,6 @@ set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
 
 allow hal_fingerprint_default sysfs_touchpanel:dir search;
 allow hal_fingerprint_default sysfs_touchpanel:file rw_file_perms;
+
+# Allow hal_fingerprint_default to read fastrpc_shell_3
+allow hal_fingerprint_default public_adsprpcd_file:file r_file_perms;
