@@ -24,3 +24,6 @@ allow hal_fingerprint_default vendor_sysfs_graphics:dir search;
 allow hal_fingerprint_default vendor_sysfs_graphics:file rw_file_perms;
 
 set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
+
+# Allow hal_fingerprint_default to read fastrpc_shell_3
+allow hal_fingerprint_default public_adsprpcd_file:file r_file_perms;
