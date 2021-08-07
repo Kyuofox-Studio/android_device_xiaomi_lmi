@@ -342,6 +342,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml
 
+PRODUCT_PACKAGES += \
+    hiddenapi-package-allowlist-product.xml \
+    privapp-permissions-product.xml
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti

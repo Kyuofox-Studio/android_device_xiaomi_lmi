@@ -5,6 +5,20 @@
 //
 
 prebuilt_etc {
+    name: "hiddenapi-package-allowlist-product.xml",
+    sub_dir: "sysconfig",
+    src: "hiddenapi-package-allowlist-product.xml",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "privapp-permissions-product.xml",
+    sub_dir: "permissions",
+    src: "privapp-permissions-product.xml",
+    product_specific: true,
+}
+
+prebuilt_etc {
     name: "privapp-permissions-qti.xml",
     sub_dir: "permissions",
     src: "privapp-permissions-qti.xml",
