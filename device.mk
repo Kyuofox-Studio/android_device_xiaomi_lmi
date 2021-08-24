@@ -383,6 +383,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service.xiaomi_lmi
 
+PRODUCT_PACKAGES += \
+    excluded-input-devices.xml
+
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
