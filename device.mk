@@ -102,6 +102,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     component-overrides.xml
 
+# Configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
