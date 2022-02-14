@@ -274,6 +274,7 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     LmiFrameworks \
     LmiSystemUI \
+    LmiTelephony \
     SystemUIResCommon \
     TelephonyResCommon \
     WifiResCommon \
