@@ -5,13 +5,6 @@
 //
 
 prebuilt_etc {
-    name: "component-overrides.xml",
-    src: "component-overrides.xml",
-    sub_dir: "sysconfig",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "public.libraries.txt",
     src: "public.libraries.txt",
     vendor: true,
