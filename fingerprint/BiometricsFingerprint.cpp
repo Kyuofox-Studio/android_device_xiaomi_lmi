@@ -41,6 +41,8 @@
 
 #define FOD_UI_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui"
 
+#define FOD_STATUS_PATH "/sys/touchpanel/fod_status"
+
 namespace {
 
 template <typename T>
@@ -100,6 +102,11 @@ BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr), mDevi
             return;
         }
 
+        int fs = open(FOD_STATUS_PATH, O_RDWR);
+        if (fs < 0) {
+            LOG(ERROR) << "failed to open fs, err: " << fs;
+        }
+
         struct pollfd fodUiPoll = {
             .fd = fd,
             .events = POLLERR | POLLPRI,
@@ -118,6 +125,9 @@ BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr), mDevi
             mDevice->extCmd(mDevice, COMMAND_NIT, fingerDown ? PARAM_NIT_FOD : PARAM_NIT_NONE);
             if (!fingerDown) {
                 set(DISPPARAM_PATH, DISPPARAM_FOD_HBM_OFF);
+            }
+            if (fs >= 0) {
+                write(fs, readBool(fd) ? "1" : "0", 1);
             }
         }
     }).detach();
