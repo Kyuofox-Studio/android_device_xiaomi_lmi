@@ -138,7 +138,11 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.xiaomi_lmi
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi_lmi \
+    sensors.udfps.lmi
+
+PRODUCT_PACKAGES += \
+    hals.conf
 
 # GPS
 PRODUCT_PACKAGES += \
