@@ -145,6 +145,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResCommon \
+    LmiFrameworks \
     SystemUIResCommon \
     TelephonyResCommon \
     WifiResCommon
