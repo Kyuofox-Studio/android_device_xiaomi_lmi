@@ -178,6 +178,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     sec_config
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.lights-service.qti.xiaomi_lmi
+
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail \
