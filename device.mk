@@ -75,7 +75,7 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
 
 # Boost Framework
-TARGET_SUPPORT_MIKU_BOOST_FRAMEWORK := true
+TARGET_MIKU_BOOST_FRAMEWORK_PLATFORM := kona
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
