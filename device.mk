@@ -304,6 +304,7 @@ PRODUCT_PACKAGES += \
     WifiResCommon
 
 PRODUCT_PACKAGES += \
+    AospNfcOverlayLmi \
     FrameworksResTarget \
     FrameworksResLmi \
     SystemUIResLmi \
