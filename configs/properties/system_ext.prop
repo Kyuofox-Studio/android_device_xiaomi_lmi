@@ -1,3 +1,6 @@
+# Camera
+vendor.camera.aux.packagelist=com.android.camera,org.codeaurora.snapcam,org.lineageos.aperture
+
 # DPM
 persist.vendor.dpm.feature=1
 

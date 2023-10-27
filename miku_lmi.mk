@@ -11,11 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from lmi device
 $(call inherit-product, device/xiaomi/lmi/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Miku stuff.
+$(call inherit-product, vendor/miku/build/product/miku_product.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_lmi
+PRODUCT_NAME := miku_lmi
 PRODUCT_DEVICE := lmi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi K30 Pro
@@ -26,8 +26,8 @@ PRODUCT_CHARACTERISTICS := nosdcard
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="lmi-user 12 RKQ1.211001.001 V14.0.5.0.SJKCNXM release-keys" \
-    TARGET_PRODUCT="lmi"
+TARGET_VENDOR := xiaomi
+TARGET_VENDOR_PRODUCT_NAME := lmi
 
-BUILD_FINGERPRINT := Redmi/lmi/lmi:12/RKQ1.211001.001/V14.0.5.0.SJKCNXM:user/release-keys
+# Maintainer
+MIKU_MASTER := Kyuofox
