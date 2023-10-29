@@ -282,6 +282,7 @@ PRODUCT_PACKAGES += \
     DeviceAsWebcamResLmi \
     FrameworksResTarget \
     FrameworksResLmi \
+    SettingsResLmi \
     SystemUIResLmi \
     WifiResTarget \
     WifiMainline
