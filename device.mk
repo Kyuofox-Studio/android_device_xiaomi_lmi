@@ -306,7 +306,8 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     FrameworksResLmi \
     SystemUIResLmi \
-    WifiResTarget
+    WifiResTarget \
+    WifiMainline
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
