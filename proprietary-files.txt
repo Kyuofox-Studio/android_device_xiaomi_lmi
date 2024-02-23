@@ -1126,8 +1126,10 @@ vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # RIL
+vendor/bin/shsusrd
 vendor/bin/ssgtzd
 vendor/etc/init/ssgtzd.rc
+vendor/etc/init/shsusrd.rc
 
 # RIL - from UMI V14.0.2.0.TJBCNXM
 product/app/uimgbaservice/uimgbaservice.apk|1e0f333c85e16fcaf92802b3cc49c22dec4adce2
