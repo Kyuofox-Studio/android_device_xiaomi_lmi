@@ -99,6 +99,9 @@ TARGET_KERNEL_CONFIG := lmi_defconfig
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
+
 # Media
 TARGET_USES_ION := true
 
