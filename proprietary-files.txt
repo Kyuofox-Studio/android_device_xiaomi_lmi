@@ -1253,7 +1253,7 @@ vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql|1ca05b047116
 vendor/etc/init/imsrcsd.rc|2dc42ff6e4b6dd389bd3bc9a7af30dec2f1a45df
 
 # RIL (IMS) - from OS1.0.2.0.ULMCNXM
-system_ext/priv-app/ims/ims.apk|a73bf58a40780feef012726222144b48f383e610
+system_ext/priv-app/ims/ims.apk|15ff2ffe456ec58bd10ff9f947899f225df42f09
 system_ext/lib64/lib-imsvideocodec.so|89424459aa73f4cbaa17fa18fdb212d2358a46f0
 system_ext/lib64/lib-imsvt.so|0517dff9db29cbf4a2a62706e1ce3b322cf1d681
 system_ext/lib64/lib-imsvtextutils.so|19b0a5b9119388e735729e9a86ee7ee0a1355077
