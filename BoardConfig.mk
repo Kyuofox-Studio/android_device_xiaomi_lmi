@@ -72,8 +72,7 @@ TARGET_USES_FOD_ZPOS := true
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/vintf/device_framework_matrix.xml \
-    $(DEVICE_PATH)/configs/vintf/framework_matrix_xiaomi.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    $(DEVICE_PATH)/configs/vintf/framework_matrix_xiaomi.xml
 
 DEVICE_MANIFEST_FILE := \
     $(DEVICE_PATH)/configs/vintf/manifest.xml \
@@ -100,9 +99,6 @@ TARGET_KERNEL_LLVM_BINUTILS := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/lmi
 TARGET_KERNEL_CONFIG := lmi_defconfig
 
-# Lineage Health
-TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
-
 # Media
 TARGET_USES_ION := true
 
@@ -121,7 +117,7 @@ BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext product odm vendor
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 9122611200
 
-ifneq ($(WITH_GMS),true)
+ifneq ($(TARGET_BUILD_GAPPS),true)
 BOARD_SYSTEMIMAGE_EXTFS_INODE_COUNT := -1
 BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 1073741824
 BOARD_SYSTEM_EXTIMAGE_EXTFS_INODE_COUNT := -1
