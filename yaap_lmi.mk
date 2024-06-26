@@ -14,6 +14,9 @@ $(call inherit-product, device/xiaomi/lmi/device.mk)
 # Inherit some common YAAP stuff.
 $(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
+# Gapps
+TARGET_BUILD_GAPPS := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := yaap_lmi
 PRODUCT_DEVICE := lmi
