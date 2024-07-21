@@ -10,6 +10,12 @@ prebuilt_etc {
     vendor: true,
 }
 
+prebuilt_etc {
+    name: "fstab.zram",
+    src: "fstab.zram",
+    vendor: true,
+}
+
 sh_binary {
     name: "init.mdm.sh",
     src: "init.mdm.sh",

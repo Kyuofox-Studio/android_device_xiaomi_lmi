@@ -180,6 +180,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.ramdisk \
+    fstab.zram \
     init.class_main.sh \
     init.mdm.sh \
     init.mi.btmac.sh \
