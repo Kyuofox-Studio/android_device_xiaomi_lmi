@@ -649,7 +649,7 @@ vendor/lib/libwvkeybox.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/libbase64.so
 vendor/lib64/libtrustedapploader.so
-vendor/lib64/libwvhidl.so
+vendor/lib64/libwvhidl.so|8c65ede4ea95e4583d0fa2ab93e04171de9c7d7e
 vendor/lib64/libwvkeybox.so
 
 # DRM (Widevine L1)
