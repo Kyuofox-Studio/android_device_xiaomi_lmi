@@ -226,12 +226,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     media_codecs_c2.xml \
-    media_codecs_kona.xml \
     media_codecs_performance_c2.xml \
-    media_codecs_performance_kona.xml \
     media_profiles_kona.xml \
-    media_profiles_V1_0.xml \
-    system_properties.xml
+    media_profiles_V1_0.xml
 
 # Native Public Libraries
 PRODUCT_PACKAGES += \
@@ -260,22 +257,13 @@ PRODUCT_PACKAGES += \
     libnfc-nxp.conf
 
 # OMX
+TARGET_SUPPORTS_OMX_SERVICE := false
+
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
     libcodec2_hidl@1.0.vendor \
     libcodec2_vndk.vendor \
-    libmm-omxcore \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libOmxCore \
-    libOmxEvrcEnc \
-    libOmxG711Enc \
-    libOmxQcelp13Enc \
-    libOmxVdec \
-    libOmxVenc \
-    libstagefrighthw \
-    libstagefright_omx.vendor \
-    libstagefright_softomx_plugin.vendor
+    libmm-omxcore
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
