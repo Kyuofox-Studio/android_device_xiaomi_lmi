@@ -20,14 +20,15 @@ PRODUCT_DEVICE := lmi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi K30 Pro
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_SYSTEM_NAME := lmi
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="lmi-user 12 RKQ1.211001.001 V14.0.5.0.SJKCNXM release-keys" \
-    TARGET_PRODUCT="lmi"
-
-BUILD_FINGERPRINT := Redmi/lmi/lmi:12/RKQ1.211001.001/V14.0.5.0.SJKCNXM:user/release-keys
+    BuildDesc="lmi-user 12 RKQ1.211001.001 V14.0.5.0.SJKCNXM release-keys" \
+    BuildFingerprint=Redmi/lmi/lmi:12/RKQ1.211001.001/V14.0.5.0.SJKCNXM:user/release-keys \
+    DeviceName=lmi \
+    DeviceProduct=lmi \
+    SystemDevice=lmi \
+    SystemName=lmi
