@@ -1312,7 +1312,7 @@ vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so|a9ee88a7a5aa10f1cf7836c768727120fdb
 vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so|84df6f50ab4783903aaa5cfe8071ee4a5ec459f7
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so|b318f7135c79980654e9a564e6b464cd62d5ccbd
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|13af0229d2f43d9653d48b4400c7db999d9035e5
-vendor/lib64/vendor.qti.imsrtpservice@3.0.so|6d4b854e7ba91ef98398568c365a131cf4c01c93
+vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=_vendor|6d4b854e7ba91ef98398568c365a131cf4c01c93
 
 # Secure Element
 vendor/bin/hw/vendor.qti.secure_element@1.2-service
