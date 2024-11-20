@@ -225,16 +225,9 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor
 
 PRODUCT_PACKAGES += \
-    media_codecs.xml \
-    media_codecs_c2.xml \
     media_codecs_kona.xml \
-    media_codecs_kona_vendor.xml \
-    media_codecs_performance_c2.xml \
     media_codecs_performance_kona.xml \
-    media_codecs_performance_kona_vendor.xml \
-    media_profiles.xml \
     media_profiles_kona.xml \
-    media_profiles_vendor.xml \
     media_profiles_V1_0.xml \
     system_properties.xml
 
