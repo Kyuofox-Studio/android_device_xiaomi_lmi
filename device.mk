@@ -460,10 +460,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     excluded-input-devices.xml
 
-# VNDK
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v34/arm64/arch-arm64-armv8-a/shared/vndk-core/libcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcrypto-v34.so
-
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \

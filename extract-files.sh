@@ -72,11 +72,19 @@ function blob_fixup() {
             ;;
         vendor/lib64/libwvhidl.so)
             [ "$2" = "" ] && return 0
-            $PATCHELF --replace-needed "libcrypto.so" "libcrypto-v34.so" "${2}"
+            $PATCHELF --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
             ;;
         vendor/etc/seccomp_policy/atfwd@2.0.policy)
             [ "$2" = "" ] && return 0
             echo 'gettid: 1' >> "${2}"
+            ;;
+        vendor/lib/mediadrm/libwvdrmengine.so)
+            [ "$2" = "" ] && return 0
+            $PATCHELF --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
+            ;;
+        vendor/lib64/mediadrm/libwvdrmengine.so)
+            [ "$2" = "" ] && return 0
+            $PATCHELF --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
             ;;
         *)
             return 1
