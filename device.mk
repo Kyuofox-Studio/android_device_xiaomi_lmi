@@ -178,7 +178,7 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    fstab.ramdisk \
+    fstab.qcom.ramdisk \
     init.class_main.sh \
     init.mdm.sh \
     init.mi.btmac.sh \

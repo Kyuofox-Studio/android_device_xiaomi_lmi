@@ -8,6 +8,7 @@ prebuilt_etc {
     name: "fstab.qcom",
     src: "fstab.qcom",
     vendor: true,
+    ramdisk_available: true,
 }
 
 sh_binary {
